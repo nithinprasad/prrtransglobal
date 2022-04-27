@@ -36,7 +36,8 @@
              "src/assets/lib/easing/easing.min.js",
              "src/assets/lib/waypoints/waypoints.min.js",
               "src/assets/lib/counterup/counterup.min.js",
-              "src/assets/js/main.js"
+              "src/assets/js/main.js",
+              "src/assets/js/embed.min.js"
             ]
           },
           "configurations": {

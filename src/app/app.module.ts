@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
+import { SafeHtmlPipe } from './pipes/safe.pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
@@ -19,6 +20,7 @@ import { FooterComponent } from './component/footer/footer.component';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { ReviewsComponent } from './component/reviews/reviews.component';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -52,11 +54,14 @@ const analytics = getAnalytics(app);
     TeamComponent,
     TestimoninalComponent,
     BlogComponent,
-    FooterComponent
+    FooterComponent,
+    ReviewsComponent,
+    SafeHtmlPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
