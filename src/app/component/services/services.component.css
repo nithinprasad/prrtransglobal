@@ -74,12 +74,13 @@ body {
 .card .face.front-face .profile {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 20%;
     object-fit: cover
 }
 
 .card .face.front-face .name {
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 .card .face.front-face .designation {

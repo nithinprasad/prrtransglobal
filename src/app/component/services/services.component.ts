@@ -36,7 +36,7 @@ export class ServicesComponent implements OnInit {
       "icon":"store",
       "service":"Project Handling",
       "desc": "Our Specialised team can handle your projects safely and timely manner. We are experienced to handle odd dimensions cargos by air and ocean.",
-      "image": "../assets/img/prr/logo4.png"
+      "image": "../assets/img/prr/Project.png"
     },
     {
       "icon":"store",
@@ -48,25 +48,19 @@ export class ServicesComponent implements OnInit {
       "icon":"store",
       "service":"Marine Insurance ",
       "desc": "PRR can arrange Marine Insurance for your valuable goods to avoid risk at transit.",
-      "image": "../assets/img/prr/logo4.png"
+      "image": "../assets/img/prr/marine.png"
     },
     {
       "icon":"store",
-      "service":"Door to door Cargo movements ",
+      "service":"Door to Door Cargo Movements ",
       "desc": "PRR ready pick the cargo from your door step and deliver the same to your customer door and vice versa. We offer all types of specialized services like EXW (ex works), FCA (free carrier), CPT (carriage paid to), CIP (carriage and insurance paid to), DAT (delivered at terminal) , DAP (delivered at place), DDP (delivered duty paid), FAS( free alongside ship), FOB( free on board), CFR (cost and freight) and CIF( cost, insurance and freight).",
-      "image": "../assets/img/prr/logo4.png"
-    },
-    {
-      "icon":"store",
-      "service":"Buyers consolidation and groupage ",
-      "desc": "We offer regular LCL groupage services, which are cost effective and keeps us in control of service standards. Furthermore, we do buyer consolidation to all over the Indian ports through our reliable worldwide network.",
-      "image": "../assets/img/prr/logo4.png"
+      "image": "../assets/img/prr/delivery.png"
     },
     {
       "icon":"store",
       "service":"Consolidation by Air and Sea",
       "desc": "Combining cargo of more than one consignee or shippers into one lot and then prepare it for shipping to the destination is known as consolidation.  PRR can arrange consolidation to/from major destinations by air and sea with fast and smooth delivery. We offer regular LCL groupage services, which are cost effective and keeps us in control of service standards. Furthermore, we do buyer consolidation to all over the Indian ports through our reliable worldwide network.",
-      "image": "../assets/img/prr/logo4.png"
+      "image": "../assets/img/prr/consolidation.png"
     }
   ]
 

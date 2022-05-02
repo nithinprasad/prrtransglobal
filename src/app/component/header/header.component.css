@@ -1,0 +1,9 @@
+.text-white {
+    color: #fff !important;
+    font-size: 2rem;
+  }
+  
+  .text-primary {
+    color: #FF4800 !important;
+    font-size: 4rem;
+  }
