@@ -22,6 +22,27 @@ export class TestimoninalComponent implements OnInit {
     }
   ]
 
+  public mockDataCert:any=[
+    {
+      "name":"Robert Garrison",
+      "image": "../assets/img/prr/1.pdf",
+      "desc": "Sample"
+    },
+    {
+      "name":"Robert Garrison",
+      "image": "../assets/img/prr/1.pdf",
+      "desc": "Sample"
+    }, {
+      "name":"Robert Garrison",
+      "image": "../assets/img/prr/1.pdf",
+      "desc": "Sample"
+    }, {
+      "name":"Robert Garrison",
+      "image": "../assets/img/prr/1.pdf",
+      "desc": "Sample"
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

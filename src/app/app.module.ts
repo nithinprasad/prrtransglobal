@@ -21,6 +21,10 @@ import { FooterComponent } from './component/footer/footer.component';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { ReviewsComponent } from './component/reviews/reviews.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StrengthComponent } from './component/strength/strength.component';
+import { TrackingComponent } from './component/tracking/tracking.component';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -56,12 +60,17 @@ const analytics = getAnalytics(app);
     BlogComponent,
     FooterComponent,
     ReviewsComponent,
-    SafeHtmlPipe
+    SafeHtmlPipe,
+    ContactsComponent,
+    StrengthComponent,
+    TrackingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

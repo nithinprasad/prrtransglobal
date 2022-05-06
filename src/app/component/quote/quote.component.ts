@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-quote',
@@ -7,9 +9,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteComponent implements OnInit {
 
-  constructor() { }
+  constructor( private formBuilder: FormBuilder,private http: HttpClient) { }
 
   ngOnInit(): void {
+  }
+
+  checkoutForm = this.formBuilder.group({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  onSubmit(): void {
+    // Process checkout data here
+   
+    console.log('Your order has been submitted', this.checkoutForm.value);
+    var formData: any = new FormData();
+    formData.append("email", this.checkoutForm.get('email')?.value);
+    var name= this.checkoutForm.get('name')?.value;
+    var phone= this.checkoutForm.get('phone')?.value;
+    var msg= this.checkoutForm.get('message')?.value;
+
+    var string=""+name+"\n";
+    string+="Phone:"+phone+"\n";
+    string+="Message:"+msg+"\n";
+
+    formData.append("message", string);
+    this.checkoutForm.reset();
+    this.http.post("https://formspree.io/f/mlezolyp", formData).subscribe(data=>{
+      
+      console.log(data);
+    });
   }
 
 }

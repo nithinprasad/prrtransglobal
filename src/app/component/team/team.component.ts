@@ -29,23 +29,23 @@ export class TeamComponent implements OnInit {
       
       "name":"B Magesh",
       "designation": "Manager Operations",
-      "image": "../assets/img/prr/magesh.jpeg",
+      "image": "../assets/img/prr/team/magesh.jpeg",
       "email": "info@prrtransglobal.com",
       "phone": "+91 9840740198"
     },
     {
       
       "name":"Harish Santhanam ",
-      "designation": "Customer support ",
+      "designation": "Manager Customer support ",
       "image": "../assets/img/prr/team/harish.jpeg",
-      "email": "admin@prrtranaglobal.com",
+      "email": "admin@prrtransglobal.com",
       "phone": "+91 9791033392"
     },
     {
       
       "name":"Nadhiya",
-      "designation": "Finance",
-      "image": "../assets/img/prr/nadhiya.jpeg",
+      "designation": "Manager Finance",
+      "image": "../assets/img/prr/team/nadhiya.jpeg",
       "email": "accounts@prrtransglobal.com",
       "phone": "+91 7904058994"
     }
@@ -56,5 +56,6 @@ export class TeamComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }

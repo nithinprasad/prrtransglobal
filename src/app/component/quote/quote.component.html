@@ -1,10 +1,10 @@
 <!--  Quote Request Start -->
-<div class="container-fluid bg-secondary my-5">
+<div class="container-fluid  my-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7 py-5 py-lg-0">
-                <h6 class="text-primary text-uppercase font-weight-bold">Get A Quote</h6>
-                <h1 class="mb-4">Request A Free Quote</h1>
+                <h3 class="text-primary text-uppercase font-weight-bold">Get A Quote</h3>
+                <h6 class="mb-4">Request A Free Quote</h6>
                 <p class="mb-4">For your logistics quote please submit your details and requirements in given box or send mail to <i>rajesh@prrtranaglobal.com</i>
                     You will get feedback within one hour time</p>
                 <div class="row">
@@ -24,18 +24,19 @@
             </div>
             <div class="col-lg-5">
                 <div class="bg-primary py-5 px-4 px-sm-5">
-                    <form class="py-5">
+                    <form (ngSubmit)="onSubmit()" [formGroup]="checkoutForm" class="py-5">
+                  
                         <div class="form-group">
-                            <input type="text" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
+                            <input type="text" formControlName="name" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
+                            <input type="email" formControlName="email" class="form-control  border-0 p-4" placeholder="Your Email" required="required" />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control border-0 p-4" placeholder="Your Phone number" required="required" />
+                            <input type="text" formControlName="phone" class="form-control border-0 p-4" placeholder="Your Phone number" required="required" />
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Please enter your details" rows="3"></textarea>
+                            <textarea class="form-control" formControlName="message" id="exampleFormControlTextarea1" placeholder="Please enter your details" rows="3"></textarea>
                         </div>
                         <div>
                             <button class="btn btn-dark btn-block border-0 py-3" type="submit">Get A Quote</button>
