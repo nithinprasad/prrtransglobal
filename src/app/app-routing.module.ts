@@ -5,7 +5,7 @@ import { FeatureComponent } from './component/feature/feature.component';
 import { HomeComponent } from './component/home/home.component';
 import { ServicesComponent } from './component/services/services.component';
 import { StrengthComponent } from './component/strength/strength.component';
-import { ContactsComponent } from './contacts/contacts.component';
+import { ContactsComponent } from './component/contacts/contacts.component';
 
 const routes: Routes = [
   { path: 'service', 

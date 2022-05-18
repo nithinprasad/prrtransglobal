@@ -13,7 +13,7 @@ export class TeamComponent implements OnInit {
       
       "name":"Rajesh Kumar P R",
       "designation": "Managing Director",
-      "image": "../assets/img/prr/team/rajesh.jpg",
+      "image": "../assets/img/prr/team/r.jpg",
       "email": "rajesh@prrtransglobal.com",
       "phone": "+918056233911"
     },
@@ -29,7 +29,7 @@ export class TeamComponent implements OnInit {
       
       "name":"B Magesh",
       "designation": "Manager Operations",
-      "image": "../assets/img/prr/team/magesh.jpeg",
+      "image": "../assets/img/prr/team/m.png",
       "email": "info@prrtransglobal.com",
       "phone": "+91 9840740198"
     },
@@ -45,7 +45,7 @@ export class TeamComponent implements OnInit {
       
       "name":"Nadhiya",
       "designation": "Manager Finance",
-      "image": "../assets/img/prr/team/nadhiya.jpeg",
+      "image": "../assets/img/prr/team/n.png",
       "email": "accounts@prrtransglobal.com",
       "phone": "+91 7904058994"
     }
