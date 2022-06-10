@@ -6,6 +6,7 @@
             <img src="../assets/img/prr/LOGO_new.jpg" height="90px">
             
         </a>
+        <a class="navbar-brand" href="#">
         <h1 class="head">
             <span>P</span>
             <span>R</span>
@@ -43,13 +44,17 @@
             <span>E</span>
             <span>D</span>
             <span>&#10;&#13;</span>
-           
         </h1>
+        </a>
+    </nav>
+    </div>
+    <div class="container-fluid p-0">
+    <nav class=" menus navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
+            <div class="navbar-nav ml-auto py-0">
                 <a routerLink="" class="nav-item nav-link" routerLinkActive="active">Home</a>
                 <a routerLink="strength" class="nav-item nav-link" routerLinkActive="active">Strength</a>
                 <a routerLink="service" class="nav-item nav-link" routerLinkActive="active">Service</a>
@@ -66,6 +71,7 @@
            <!-- <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Get A Quote</a>-->
         </div>
     </nav>
+   
 </div>
 <router-outlet></router-outlet>
 <!-- Navbar End -->

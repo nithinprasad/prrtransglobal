@@ -15,7 +15,7 @@
  h1 {
 	 color: #17a2b8;
 	 font-family: 'Raleway', sans-serif;
-	 font-size: 25px;
+	 font-size: 40px;
 	 font-weight: 600;
 	 text-transform: uppercase;
 }
@@ -98,6 +98,18 @@ h1 span:nth-child(8) {
 }h1 span:nth-child(31) {
     animation-delay: 3.1s;
 }
+h1 span:nth-child(32) {
+    animation-delay: 3.2s;
+}
+h1 span:nth-child(33) {
+    animation-delay: 3.3s;
+}
+h1 span:nth-child(34) {
+    animation-delay: 3.4s;
+}
+h1 span:nth-child(35) {
+    animation-delay: 3.5s;
+}
 h1 span:nth-child {
   animation-delay: 1s;
 }
@@ -111,4 +123,12 @@ h1 span:nth-child {
 		 transform: translateY(0) rotate(0);
 	}
 }
- 
+
+.menus{
+	background-color: red;
+}
+
+.navbar-nav{
+	padding: 0px;
+	margin-bottom: -20px;
+}
