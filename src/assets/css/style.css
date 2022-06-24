@@ -9522,14 +9522,12 @@ p,
 }
 
 .navbar-light .navbar-nav .nav-link {
-  padding: 5px 5px;
-  padding-bottom: -40px;
+  padding: 30px 15px;
   font-weight: 600;
   letter-spacing: 1px;
   color: #1F1F2E;
   outline: none;
  
-  margin-top: -35px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
