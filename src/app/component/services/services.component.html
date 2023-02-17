@@ -6,7 +6,7 @@
             
         </div>
         <div class="row g-4">
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s" *ngFor="let each of mockData;let i=index">
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.7s" *ngFor="let each of mockData;let i=index">
                 <div class="service-item p-4">
                     <div class="overflow-hidden mb-4">
                         <img class="img-fluid profile" style="height: 200px;" src="{{each.image}}" alt="">
@@ -16,7 +16,7 @@
                    
                         <a class="btn-slide mt-2" data-toggle="modal" href="#exampleModalLong{{i}}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                      
-                     <!-- Modal -->
+                    </div>   <!-- Modal -->
                 <div class="modal fade" id="exampleModalLong{{i}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -33,7 +33,7 @@
                 </div>
                 </div>
             </div>
-                </div>
+               
             </div>
             </div>
         </div>

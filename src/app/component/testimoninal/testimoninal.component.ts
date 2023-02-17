@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataSupplyService } from 'src/app/data-supply.service';
 
 @Component({
   selector: 'app-testimoninal',
@@ -43,7 +44,7 @@ export class TestimoninalComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+  constructor(public dataService:DataSupplyService) { }
 
   ngOnInit(): void {
   }
