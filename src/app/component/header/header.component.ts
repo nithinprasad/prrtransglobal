@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { UntypedFormBuilder } from '@angular/forms';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { FormBuilder } from '@angular/forms';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor( private formBuilder: FormBuilder,private http: HttpClient) { }
+  constructor( private formBuilder: UntypedFormBuilder,private http: HttpClient) { }
 
   ngOnInit(): void {
   }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FormBuilder } from '@angular/forms';
+import { UntypedFormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-tracking',
@@ -9,7 +9,7 @@ import { FormBuilder } from '@angular/forms';
 })
 export class TrackingComponent implements OnInit {
 
-  constructor( private formBuilder: FormBuilder,private http: HttpClient) { }
+  constructor( private formBuilder: UntypedFormBuilder,private http: HttpClient) { }
 
   ngOnInit(): void {
   }
