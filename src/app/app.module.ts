@@ -25,6 +25,7 @@ import { ContactsComponent } from './component/contacts/contacts.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StrengthComponent } from './component/strength/strength.component';
 import { TrackingComponent } from './component/tracking/tracking.component';
+import { MapsComponent } from './component/contacts/maps/maps.component';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -63,7 +64,8 @@ const analytics = getAnalytics(app);
     SafeHtmlPipe,
     ContactsComponent,
     StrengthComponent,
-    TrackingComponent
+    TrackingComponent,
+    MapsComponent
   ],
   imports: [
     BrowserModule,
