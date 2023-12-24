@@ -22,8 +22,8 @@ export class MapsComponent {
       "line3": "Thambuchetty Street, Chennai 600 001",
       "line4": "TamilNadu, India ",
       "email": "info@prrtransglobal.com",
-      "phone": "+91 44 4355 6538",
-      "mobile": "91 80562 33911"
+      "phone": "+91 4443556538",
+      "mobile": "+91 8056233911"
     },
     {
       "location": "MUMBAI",
@@ -34,8 +34,8 @@ export class MapsComponent {
       "line3": "CBD BELAPUR NAVI MUMBAI-400614",
       "line4": "Maharashtra, India ",
       "email": "mumbai@prrtransglobal.com",
-      "phone": "00 917904267429",
-      "mobile": "00 917904267429"
+      "phone": "",
+      "mobile": "+91 7904267429"
     },
     {
       "location": "Kochi",
@@ -45,9 +45,21 @@ export class MapsComponent {
       "line2": "Alappatrun cross Road, Ernakulam",
       "line3": "Rasipuram, Kochi 682016, ",
       "line4": "Kerala, India",
-      "email": "sales.kochi@prrtransglobal.com",
-      "phone": "0484 356 3661",
-      "mobile": "0091 7010181158"
+      "email": "sales.cochin@prrtransglobal.com",
+      "phone": "0484356 3661",
+      "mobile": "+91 7010181158"
+    },
+    {
+      "location": "Gujarat",
+      "mapurl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29414.49239975846!2d69.68486983342693!3d22.846460624257276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950d59bd927f901%3A0x57cbeec0a1e6e4fb!2sSatguru%20Plaza%20Commercial%20Office%20And%20Shops%20Complex!5e0!3m2!1sen!2sin!4v1703437037066!5m2!1sen!2sin",
+      "name":"PRR Trans Logistics Pvt Ltd",
+      "line1": "Office no 22 Satguru complex Ampair 1 ",
+      "line2": "Mundra port road",
+      "line3": "Mundra , Kachch  370421, ",
+      "line4": "Gujarat, India",
+      "email": "mundra@prrtranaglobal.com",
+      "phone": "",
+      "mobile": "+91 7904267429"
     }
     
   ]

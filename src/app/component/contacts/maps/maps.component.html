@@ -34,14 +34,14 @@
                                                     <h4 class="card-title">{{each.location}}</h4>
                                                     <p class="card-text text-start fw-semibold">
                                                         {{each.name}} <br>
-                                                        {{each.line1}}
+                                                        <i class="bi bi-building-add"></i>{{each.line1}}
                                                         <br>
                                                         {{each.line2}}<br>
                                                         {{each.line3}}<br>
                                                         {{each.line4}}<br>
-                                                        {{each.email}}<br>
-                                                        {{each.phone}}<br>
-                                                        {{each.mobile}}
+                                                        <i class="bi bi-envelope"></i><a href="mailto:{{each.email}}"> {{each.email}}</a><br>
+                                                        <i class="bi bi-phone"></i><a href="tel:{{each.mobile}}"> {{each.mobile}}</a><br>
+                                                        <i class="bi bi-phone"></i><a href="tel:{{each.phone}}"> {{each.phone}}</a>
                                                     </p>
         
                                                 </div>
