@@ -23,24 +23,62 @@ export class TestimoninalComponent implements OnInit {
     }
   ]
 
-  public mockDataCert:any=[
+  public mockDataCert: any = [
     {
-      "name":"Robert Garrison",
-      "image": "../assets/img/prr/1.pdf",
-      "desc": "Sample"
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/3.png",
     },
     {
-      "name":"Robert Garrison",
-      "image": "../assets/img/prr/1.pdf",
-      "desc": "Sample"
-    }, {
-      "name":"Robert Garrison",
-      "image": "../assets/img/prr/1.pdf",
-      "desc": "Sample"
-    }, {
-      "name":"Robert Garrison",
-      "image": "../assets/img/prr/1.pdf",
-      "desc": "Sample"
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/4.jpg",
+    },
+    {
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/5.png",
+    },
+    {
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/6.png",
+    },
+    {
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/8.jpeg",
+    },
+    {
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/9.jpg",
+    },
+    {
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/10.png",
+    },
+    {
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/11.png",
+    },
+    {
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/1.pdf",
+    },
+    {
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/2.pdf",
+    },
+    {
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/3.pdf",
+    },
+    {
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/4.pdf",
+    },
+    {
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/5.pdf",
+    },
+    {
+      "title": "3 PMG",
+      "src": "../../../assets/img/prr/cert/6.pdf",
     }
   ]
 
@@ -49,6 +87,14 @@ export class TestimoninalComponent implements OnInit {
   ngOnInit(): void {
   }
 
+   selectedItemId: number | null = null;
 
+  openModal(itemId: number): void {
+    this.selectedItemId = itemId;
+  }
+
+  closeModal(): void {
+    this.selectedItemId = null;
+  }
 
 }
