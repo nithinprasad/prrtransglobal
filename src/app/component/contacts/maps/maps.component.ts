@@ -50,7 +50,7 @@ export class MapsComponent {
       "mobile": "+91 7010181158"
     },
     {
-      "location": "Gujarat",
+      "location": "Mundra",
       "mapurl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29414.49239975846!2d69.68486983342693!3d22.846460624257276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950d59bd927f901%3A0x57cbeec0a1e6e4fb!2sSatguru%20Plaza%20Commercial%20Office%20And%20Shops%20Complex!5e0!3m2!1sen!2sin!4v1703437037066!5m2!1sen!2sin",
       "name":"PRR Trans Logistics Pvt Ltd",
       "line1": "Office no 22 Satguru complex Ampair 1 ",

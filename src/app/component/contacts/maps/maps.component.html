@@ -1,60 +1,48 @@
+<section class="pt-5 pb-5">
 
-        <section class="pt-5 pb-5">
-           
-                    
-                    <div class="col-6 text-right">
-                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                            <i class="fa fa-arrow-left"></i>
-                        </a>
-                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-        
-                            <div class="carousel-inner">
-                                <div class="carousel-item" *ngFor=" let each of officeLocations ; let index = index" [class.active]="index == 0">
-                                    <div class="row" >
-        
-                                        <div class="card mb-3" >
-                                            <div class="row g-0">
-                                              <div class="col-md-6">
-                                                <iframe
-                                                [src]="getSanitizedUrl(each.mapurl) "
-                                                height="100%"
-                                                width="100%"
-                                                allowfullscreen={false}
-                                                loading="lazy"
-                                                title="wedding location"
-                                              ></iframe>
-                                              </div>
-                                              <div class="col-md-6">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">{{each.location}}</h4>
-                                                    <p class="card-text text-start fw-semibold">
-                                                        {{each.name}} <br>
-                                                        <i class="bi bi-building-add"></i>{{each.line1}}
-                                                        <br>
-                                                        {{each.line2}}<br>
-                                                        {{each.line3}}<br>
-                                                        {{each.line4}}<br>
-                                                        <i class="bi bi-envelope"></i><a href="mailto:{{each.email}}"> {{each.email}}</a><br>
-                                                        <i class="bi bi-phone"></i><a href="tel:{{each.mobile}}"> {{each.mobile}}</a><br>
-                                                        <i class="bi bi-phone"></i><a href="tel:{{each.phone}}"> {{each.phone}}</a>
-                                                    </p>
-        
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-              
-        </section>
- 
+    <div class="row">
+        <div
+            class="col-sm-6 mb-3 mb-sm-0"
+            *ngFor=" let each of officeLocations ; let index = index"
+            [class.active]="index == 0"
+        >
+            <div class="card mb-3">
+                <iframe
+                    [src]="getSanitizedUrl(each.mapurl) "
+                    height="100%"
+                    width="100%"
+                    allowfullscreen={false}
+                    loading="lazy"
+                    title="wedding location"
+                ></iframe>
+
+                <div class="card-body">
+                    <h4 class="card-title">{{each.location}}</h4>
+                    <p class="card-text text-start fw-semibold">
+                        {{each.name}}
+                        <br>
+                        <i class="bi bi-building-add"></i>
+                        {{each.line1}}
+                        <br>
+                        {{each.line2}}
+                        <br>
+                        {{each.line3}}
+                        <br>
+                        {{each.line4}}
+                        <br>
+                        <i class="bi bi-envelope"></i>
+                        <a href="mailto:{{each.email}}">{{each.email}}</a>
+                        <br>
+                        <i class="bi bi-phone"></i>
+                        <a href="tel:{{each.mobile}}">{{each.mobile}}</a>
+                        <br>
+                        <i class="bi bi-phone"></i>
+                        <a href="tel:{{each.phone}}">{{each.phone}}</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
