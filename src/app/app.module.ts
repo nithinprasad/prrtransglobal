@@ -26,6 +26,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StrengthComponent } from './component/strength/strength.component';
 import { TrackingComponent } from './component/tracking/tracking.component';
 import { MapsComponent } from './component/contacts/maps/maps.component';
+import { AcademicsComponent } from './pages/academics/academics.component';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -65,7 +66,8 @@ const analytics = getAnalytics(app);
     ContactsComponent,
     StrengthComponent,
     TrackingComponent,
-    MapsComponent
+    MapsComponent,
+    AcademicsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,36 @@
+<section class="academics-hero">
+    <div class="container">
+        <h1>Academics &amp; Training</h1>
+        <p class="subtitle">
+            PRR Trans Global partners with academic institutions to give students real-world
+      exposure to the logistics and freight forwarding industry.
+        </p>
+    </div>
+</section>
+
+<section class="internship-highlight">
+    <div class="container">
+        <h2>{{ internshipDetails.university }}</h2>
+        <p class="program-name">
+            {{ internshipDetails.program }} &middot; {{ internshipDetails.duration }}
+        </p>
+        <p>{{ internshipDetails.summary }}</p>
+
+        <h3>What the internship covered</h3>
+        <ul class="focus-areas">
+            <li *ngFor="let area of internshipDetails.focusAreas">{{ area }}</li>
+        </ul>
+    </div>
+</section>
+
+<section class="training-offer">
+    <div class="container">
+        <h2>Training for Students</h2>
+        <p>
+            Beyond internships, we offer training sessions for students looking to understand
+      the fundamentals of freight forwarding, supply chain operations, and international
+      trade logistics. If your institution is interested in a similar collaboration, feel
+      free to reach out to us.
+        </p>
+    </div>
+</section>

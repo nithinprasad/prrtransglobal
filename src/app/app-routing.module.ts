@@ -6,6 +6,7 @@ import { HomeComponent } from './component/home/home.component';
 import { ServicesComponent } from './component/services/services.component';
 import { StrengthComponent } from './component/strength/strength.component';
 import { ContactsComponent } from './component/contacts/contacts.component';
+import { AcademicsComponent } from './pages/academics/academics.component';
 
 const routes: Routes = [
   { path: 'service', 
@@ -20,6 +21,9 @@ const routes: Routes = [
   },
   { path: 'contact',
     component: ContactsComponent
+  },
+  { path: 'academics',
+    component: AcademicsComponent
   },
   {
     path: '',
