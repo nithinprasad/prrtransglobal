@@ -1,1 +1,156 @@
-<p>academics works!</p>
+<section class="academics-hero">
+    <div class="container">
+        <h1>Academics &amp; Internships</h1>
+        <p class="subtitle">
+            Kickstart your career in global logistics. PRR Trans Global offers hands-on internship
+      opportunities for students looking to gain real-world experience in freight, supply chain,
+      and international trade.
+        </p>
+    </div>
+</section>
+
+<section class="program-overview">
+    <div class="container">
+        <h2>About Our Internship Program</h2>
+        <p>
+            Our internship program pairs students with experienced professionals across operations,
+      analytics, and marketing teams. Interns work on live projects, receive mentorship, and gain
+      exposure to the logistics and freight forwarding industry from day one.
+        </p>
+        <ul class="program-highlights">
+            <li>Mentorship from industry professionals</li>
+            <li>Real project ownership, not busywork</li>
+            <li>
+                Flexible remote, hybrid, and on-site placements
+            </li>
+            <li>
+                Opportunity for full-time offers upon graduation
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="open-roles">
+    <div class="container">
+        <h2>Open Internship Roles</h2>
+        <div class="roles-grid">
+            <div
+                class="role-card"
+                *ngFor="let role of openRoles"
+            >
+                <h3>{{ role.title }}</h3>
+                <p class="role-meta">
+                    {{ role.department }} &middot; {{ role.duration }} &middot; {{ role.location }}
+                </p>
+                <p>{{ role.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="application-form">
+    <div class="container">
+        <h2>Apply Now</h2>
+
+        <div
+            *ngIf="submitted"
+            class="success-message"
+        >
+            <p>
+                Thanks for applying! We've received your application and will be in touch soon.
+            </p>
+            <button
+                type="button"
+                (click)="resetForm()"
+            >
+                Submit another application
+            </button>
+        </div>
+
+        <form
+            *ngIf="!submitted"
+            (ngSubmit)="onSubmit()"
+            #applicationForm="ngForm"
+        >
+            <div class="form-row">
+                <label for="name">Full Name *</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    [(ngModel)]="formData.name"
+                    required
+                >
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    [(ngModel)]="formData.email"
+                    required
+                >
+            </div>
+
+            <div class="form-row">
+                <label for="university">University *</label>
+                <input
+                    type="text"
+                    id="university"
+                    name="university"
+                    [(ngModel)]="formData.university"
+                    required
+                >
+            </div>
+
+            <div class="form-row">
+                <label for="roleInterest">Role of Interest</label>
+                <select
+                    id="roleInterest"
+                    name="roleInterest"
+                    [(ngModel)]="formData.roleInterest"
+                >
+                    <option value>Select a role (optional)</option>
+                    <option
+                        *ngFor="let role of openRoles"
+                        [value]="role.title"
+                    >
+                        {{ role.title }}
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="resumeLink">Resume Link</label>
+                <input
+                    type="url"
+                    id="resumeLink"
+                    name="resumeLink"
+                    placeholder="Google Drive / LinkedIn / portfolio link"
+                    [(ngModel)]="formData.resumeLink"
+                >
+            </div>
+
+            <div class="form-row">
+                <label for="message">Why are you interested? (optional)</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    [(ngModel)]="formData.message"
+                ></textarea>
+            </div>
+
+            <p
+                class="error-message"
+                *ngIf="submitError"
+            >
+                {{ submitError }}
+            </p>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</section>
