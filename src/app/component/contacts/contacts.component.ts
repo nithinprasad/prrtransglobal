@@ -55,7 +55,7 @@ export class ContactsComponent implements OnInit {
     },
     {
       
-      "name":"Ms. Divya Lakshmi M",
+      "name":"Divya Lakshmi M",
       "designation": "Overseas Pricing & Logistics Coordinator",
       "image": "../assets/img/prr/team/n.png",
       "email": "sales@prrtransglobal.com",
