@@ -1,36 +1,92 @@
-<section class="academics-hero">
-    <div class="container">
-        <h1>Academics &amp; Training</h1>
-        <p class="subtitle">
-            PRR Trans Global partners with academic institutions to give students real-world
-      exposure to the logistics and freight forwarding industry.
+<div class="jumbotron academics-jumbotron mb-0">
+    <div class="container text-center py-5">
+        <h1 class="text-white">Academics &amp; Training</h1>
+        <p
+            class="text-white-50 mx-auto"
+            style="max-width: 700px;"
+        >
+            PRR Trans Logistics Pvt. Ltd. is committed to bridging the gap between academic learning
+      and industry practice by partnering with educational institutions to provide students
+      with practical exposure to logistics, freight forwarding, customs clearance, and supply
+      chain management.
         </p>
     </div>
-</section>
+</div>
 
-<section class="internship-highlight">
-    <div class="container">
-        <h2>{{ internshipDetails.university }}</h2>
-        <p class="program-name">
-            {{ internshipDetails.program }} &middot; {{ internshipDetails.duration }}
-        </p>
-        <p>{{ internshipDetails.summary }}</p>
+<div class="container py-5">
 
-        <h3>What the internship covered</h3>
-        <ul class="focus-areas">
-            <li *ngFor="let area of internshipDetails.focusAreas">{{ area }}</li>
-        </ul>
+    <div class="card mb-5 border-0 shadow-sm">
+        <div class="card-body p-4 p-md-5">
+            <h2 class="text-primary mb-1">{{ university }}</h2>
+            <p
+                class="text-uppercase font-weight-bold"
+                style="letter-spacing: 1px; color: #1F1F2E;"
+            >
+                {{ program }} &middot; {{ duration }}
+            </p>
+            <p class="text-body">{{ summary }}</p>
+
+            <hr class="my-4">
+
+            <h6
+                class="text-uppercase font-weight-bold mb-3"
+                style="letter-spacing: 1px;"
+            >
+                Internship Highlights
+            </h6>
+            <div class="row">
+                <div
+                    class="col-md-6"
+                    *ngFor="let item of highlights"
+                >
+                    <p class="mb-2">
+                        <i class="fa fa-check-circle text-primary mr-2"></i>
+                        {{ item }}
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
 
-<section class="training-offer">
-    <div class="container">
-        <h2>Training for Students</h2>
-        <p>
-            Beyond internships, we offer training sessions for students looking to understand
-      the fundamentals of freight forwarding, supply chain operations, and international
-      trade logistics. If your institution is interested in a similar collaboration, feel
-      free to reach out to us.
+    <div class="mb-5">
+        <h2 class="mb-3">Student Training Programs</h2>
+        <p
+            class="text-body mb-4"
+            style="max-width: 720px;"
+        >
+            In addition to internships, PRR Trans Logistics Pvt. Ltd. conducts training programs for
+      students who wish to build a strong foundation in:
         </p>
+
+        <div class="row">
+            <div
+                class="col-md-6 col-lg-4 mb-3"
+                *ngFor="let area of trainingAreas"
+            >
+                <div class="border p-3 h-100 d-flex align-items-center">
+                    <i class="fa fa-graduation-cap text-primary mr-3"></i>
+                    <span class="font-weight-medium">{{ area }}</span>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+
+    <div class="bg-dark text-center p-5">
+        <h2 class="text-white">Partner With Us</h2>
+        <p
+            class="text-white-50 mx-auto mb-4"
+            style="max-width: 640px;"
+        >
+            We welcome collaborations with colleges, universities, and educational institutions
+      interested in providing industry-oriented training and internship opportunities for
+      their students.
+        </p>
+        <a
+            routerLink="/contact"
+            class="btn btn-primary px-4 py-2"
+        >
+            Contact Us
+        </a>
+    </div>
+
+</div>

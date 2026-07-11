@@ -7,18 +7,33 @@ import { Component } from '@angular/core';
 })
 export class AcademicsComponent {
 
-  internshipDetails = {
-    university: 'SRM Institute of Science and Technology',
-    program: 'Logistics & Supply Chain Internship',
-    duration: '3 months',
-    focusAreas: [
-      'Freight coordination and shipment tracking',
-      'Supply chain data analysis and reporting',
-      'Vendor and client communication',
-      'End-to-end logistics operations exposure'
-    ],
-    summary: 'Students from SRM Institute of Science and Technology completed a hands-on ' +
-      'internship with PRR Trans Global, gaining direct exposure to real-world freight ' +
-      'and logistics operations under the guidance of our operations team.'
-  };
+  university = 'SRM Arts & Science college';
+  program = 'Logistics & Supply Chain Internship';
+  duration = '3 Months';
+
+  summary = 'Students from SRM Arts & Science college successfully completed a ' +
+    'three-month internship with PRR Trans Logistics Pvt. Ltd., gaining valuable hands-on ' +
+    'experience in freight forwarding and logistics operations under the guidance of our ' +
+    'experienced professionals.';
+
+  highlights: string[] = [
+    'Freight coordination and shipment tracking',
+    'Air and sea freight operations',
+    'Customs clearance process',
+    'Supply chain documentation',
+    'Vendor and customer communication',
+    'End-to-end logistics operations',
+    'Supply chain data analysis and reporting',
+    'International trade and freight forwarding practices'
+  ];
+
+  trainingAreas: string[] = [
+    'Freight Forwarding',
+    'Customs Clearance',
+    'Supply Chain Management',
+    'International Trade',
+    'Import & Export Documentation',
+    'Air Freight and Ocean Freight Operations',
+    'Warehouse and Distribution Management'
+  ];
 }
