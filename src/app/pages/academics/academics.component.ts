@@ -11,10 +11,7 @@ export class AcademicsComponent {
   program = 'Logistics & Supply Chain Internship';
   duration = '3 Months';
 
-  summary = 'Students from various colleges successfully completed a ' +
-    'three-month internship with PRR Trans Logistics Pvt. Ltd., gaining valuable hands-on ' +
-    'experience in freight forwarding and logistics operations under the guidance of our ' +
-    'experienced professionals.';
+  summary = 'Over 300 students from SRM Arts & Science College and colleges across Chennai, Coimbatore, Bengaluru, and Mumbai completed a three‑month internship at PRR Trans Logistics Pvt. Ltd. Working alongside seasoned industry professionals, interns gained practical, hands‑on experience in core freight forwarding processes and end‑to‑end logistics operations.';
 
   highlights: string[] = [
     'Freight coordination and shipment tracking',
