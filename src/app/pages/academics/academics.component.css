@@ -1,24 +1,565 @@
-.academics-jumbotron {
-  background: linear-gradient(rgba(31, 31, 46, 0.85), rgba(31, 31, 46, 0.85)), url(/assets/img/carousel-1.jpg);
-  background-position: top;
+/* Hero Section */
+.academics-hero {
+  background: linear-gradient(rgba(31, 31, 46, 0.85), rgba(31, 31, 46, 0.85)), url('/assets/img/carousel-1.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 0;
-  border-radius: 0;
+  padding: 8rem 0 4rem;
+  position: relative;
 }
 
-.font-weight-medium {
-  font-weight: 500;
+.academics-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-.card {
-  border-radius: 0;
+.academics-hero h1 {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 1;
 }
 
-.border {
-  transition: 0.3s;
+.academics-hero p.lead {
+  color: #f8f9fa;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 1;
 }
 
-.border:hover {
-  border-color: #17a2b8 !important;
+/* Program Overview */
+.program-overview {
+  background-color: #f8f9fa;
+}
+
+.program-overview .card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.program-overview .card-body {
+  padding: 3rem;
+}
+
+.program-overview h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 1.5rem;
+}
+
+.program-overview .d-flex {
+  align-items: center;
+}
+
+.program-overview .fa-calendar-alt {
+  font-size: 2.5rem;
+  color: #0066CC;
+}
+
+.program-overview h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #1F2937;
+}
+
+.program-overview p {
+  margin: 0;
+  font-size: 1rem;
+  color: #6B7280;
+}
+
+.program-overview p.lead {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #1F2937;
+}
+
+/* Internship Highlights */
+.internship-highlights {
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #0066CC;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: #6B7280;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.feature-box {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  height: 100%;
+  border: 1px solid #D1D5DB;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.15);
+  border-color: #0066CC;
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #E6F2FF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.feature-icon i {
+  font-size: 1.5rem;
+  color: #0066CC;
+}
+
+.feature-content {
+  flex-grow: 1;
+}
+
+.feature-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0;
+}
+
+/* Training Programs */
+.training-programs {
+  background-color: #f8f9fa;
+}
+
+.training-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  height: 100%;
+  border: 1px solid #D1D5DB;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.training-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.15);
+  border-color: #0066CC;
+}
+
+.training-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #E6F2FF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.training-icon i {
+  font-size: 1.5rem;
+  color: #0066CC;
+}
+
+.training-content {
+  width: 100%;
+}
+
+.training-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+/* Call to Action */
+.cta-section {
+  background-color: #1F2937;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%230066CC" fill-opacity="0.1" d="M0,224L48,213.3C96,203,192,181,288,170.7C384,160,480,160,576,154.7C672,149,768,143,864,122.7C960,102,1056,64,1152,80C1248,96,1344,106,1440,112L1440,320L0,320Z"></path></svg>');
+  opacity: 0.1;
+}
+
+.cta-section h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.cta-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+  background-color: #0066CC;
+  border-radius: 2px;
+}
+
+.cta-section p.lead {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #f8f9fa;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.cta-section .btn {
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.cta-section .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
+  background-color: #0052A3;
+  border-color: #0052A3;
+}
+
+.cta-section .btn i {
+  font-size: 1.1rem;
+}
+
+.feature-box-lg {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-box-lg .feature-icon {
+  margin-bottom: 1.5rem;
+}
+
+.feature-box-lg .feature-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-box-lg .feature-content .feature-title {
+  flex-grow: 1;
+}
+
+.feature-box-lg .feature-content p {
+  flex-grow: 1;
+}
+
+/* Featured Training Cards */
+.training-card-featured {
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.training-card-featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #0066CC;
+}
+
+.training-card-featured .training-icon {
+  background-color: #E6F2FF;
+}
+
+.training-card-featured .training-icon i {
+  font-size: 2.5rem;
+}
+
+.training-card-featured .training-content h5 {
+  font-size: 1.25rem;
+}
+
+.training-card-featured .training-content p {
+  font-size: 0.95rem;
+  color: #6B7280;
+}
+
+/### Enhance hover effects for featured cards
+.training-card-featured:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 102, 204, 0.2);
+}
+
+.training-card-featured:hover .training-icon i {
+  color: #0052A3;
+}
+
+/* Enhanced feature box styles */
+.feature-box-lg {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-box-lg .feature-icon {
+  margin-bottom: 1.5rem;
+}
+
+.feature-box-lg .feature-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-box-lg .feature-content .feature-title {
+  flex-grow: 1;
+}
+
+.feature-box-lg .feature-content p {
+  flex-grow: 1;
+}
+
+/* Featured Training Cards */
+.training-card-featured {
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.training-card-featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #0066CC;
+}
+
+.training-card-featured .training-icon {
+  background-color: #E6F2FF;
+}
+
+.training-card-featured .training-icon i {
+  font-size: 2.5rem;
+}
+
+.training-card-featured .training-content h5 {
+  font-size: 1.25rem;
+}
+
+.training-card-featured .training-content p {
+  font-size: 0.95rem;
+  color: #6B7280;
+}
+
+/* Enhance hover effects for featured cards */
+.training-card-featured:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 102, 204, 0.2);
+}
+
+.training-card-featured:hover .training-icon i {
+  color: #0052A3;
+}
+
+/* Enhanced feature box hover effects */
+.feature-box:hover .feature-icon i {
+  color: #0052A3;
+}
+
+/* Enhanced training card hover effects */
+.training-card:hover .training-icon i {
+  color: #0052A3;
+}
+
+/* Program Overview enhancements */
+.program-overview .card {
+  position: relative;
+  overflow: hidden;
+}
+
+.program-overview .card-body {
+  position: relative;
+}
+
+.program-overview .card-body::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(0, 102, 204, 0.05),
+    transparent
+  );
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+  z-index: 0;
+}
+
+.program-overview .card:hover .card-body::before {
+  top: 0;
+  left: 0;
+}
+
+.program-overview .card-body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .academics-hero {
+    padding: 6rem 0 3rem;
+  }
+
+  .academics-hero h1 {
+    font-size: 2rem;
+  }
+
+  .academics-hero p.lead {
+    font-size: 1rem;
+  }
+
+  .program-overview .card-body {
+    padding: 2rem;
+  }
+
+  .program-overview h2 {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .cta-section p.lead {
+    font-size: 1rem;
+  }
+
+  /* Responsive adjustments for the new layout */
+  .internship-highlights .col-lg-4 {
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+
+  .training-programs .col-lg-4 {
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .academics-hero {
+    padding: 4rem 0 2rem;
+  }
+
+  .academics-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .academics-hero p.lead {
+    font-size: 0.875rem;
+  }
+
+  .program-overview .card-body {
+    padding: 1.5rem;
+  }
+
+  .program-overview h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .internship-highlights .col-lg-4,
+  .training-programs .col-lg-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .feature-box,
+  .training-card {
+    padding: 1rem;
+  }
+
+  .feature-icon,
+  .training-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature-icon i,
+  .training-icon i {
+    font-size: 1.25rem;
+  }
+
+  .feature-title,
+  .training-title {
+    font-size: 1rem;
+  }
 }
