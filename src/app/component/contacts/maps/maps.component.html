@@ -1,25 +1,22 @@
 <section class="pt-5 pb-5">
 
     <div class="row">
-        <img
-            src="../../../assets/img/prr/PRR.png"
-            class="img-fluid"
-            alt="..."
-        >
+        <div class="col-12">
+            <img
+                src="../../../assets/img/prr/PRR.png"
+                class="img-fluid"
+                alt="..."
+            >
+        </div>
         <div
             class="col-sm-6 mb-3 mb-sm-0"
             *ngFor=" let each of officeLocations ; let index = index"
             [class.active]="index == 0"
         >
             <div class="card mb-3">
-                <iframe
-                    [src]="getSanitizedUrl(each.mapurl) "
-                    height="100%"
-                    width="100%"
-                    allowfullscreen={false}
-                    loading="lazy"
-                    title="wedding location"
-                ></iframe>
+                <div class="map-responsive">
+                    <iframe [src]="getSanitizedUrl(each.mapurl)" allowfullscreen loading="lazy" style="border:0;" tabindex="0"></iframe>
+                </div>
 
                 <div class="card-body">
                     <h4 class="card-title">{{each.location}}</h4>
