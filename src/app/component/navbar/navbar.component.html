@@ -44,9 +44,10 @@
         >
             <div class="navbar-nav ml-auto py-0">
                 <a
-                    routerLink
+                    [routerLink]="['']"
                     class="nav-item nav-link"
                     routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
                 >
                     Home
                 </a>
