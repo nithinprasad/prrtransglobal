@@ -6,34 +6,39 @@
 /* Affiliation & Certification Section Styles */
 .affiliation-section {
   background-color: #f8f9fa;
-  padding: 20px 0;
+  padding: 2rem 0; /* space-8: 32px top/bottom */
 }
 .logo-scroll {
   display: flex;
   overflow-x: auto;
-  gap: 15px;
-  padding-bottom: 10px;
-  height: 96px; /* approx 1 inch */
+  gap: 1.25rem; /* space-5: 20px */
+  padding-bottom: 0.5rem; /* space-2: 8px */
   align-items: center;
 }
 .logo-scroll::-webkit-scrollbar {
-  height: 8px;
+  height: 0.25rem; /* 4px */
+}
+.logo-scroll::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
 }
 .logo-scroll::-webkit-scrollbar-thumb {
-  background: #adb5bd;
-  border-radius: 4px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 2px;
 }
 .logo-img {
-  height: 100%;
+  height: 5rem; /* 80px */
   object-fit: contain;
 }
 
 /* Section Headers */
 .section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1F2937;
-  margin-bottom: 0.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem; /* Heading 2: 2rem (32px) */
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: #1F2937; /* Secondary */
+  margin-bottom: 1.5rem; /* space-6: 24px */
   position: relative;
   display: inline-block;
 }
@@ -41,20 +46,21 @@
 .section-title::after {
   content: '';
   position: absolute;
-  bottom: -8px;
+  bottom: -0.5rem; /* 8px */
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 4px;
-  background-color: #0066CC;
-  border-radius: 2px;
+  width: 3.75rem; /* 60px */
+  height: 0.25rem; /* 4px */
+  background-color: #0066CC; /* Primary */
+  border-radius: 0.125rem; /* 2px */
 }
 
 .section-subtitle {
-  font-size: 1.125rem;
-  color: #6B7280;
-  max-width: 600px;
-  margin: 0 auto 2rem;
+  font-size: 1rem; /* Body: 1rem (16px) */
+  color: #6B7280; /* Tertiary */
+  max-width: 37.5rem; /* 600px */
+  margin: 0 auto 1.5rem; /* space-6: 24px */
+  line-height: 1.8;
 }
 
 /* Quote Box Styles (made smaller) */

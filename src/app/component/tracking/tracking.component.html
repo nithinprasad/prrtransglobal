@@ -1,44 +1,70 @@
-<div class="container-fluid bg-secondary my-5 d-none d-xl-block">
-    <div class="container">
-        <div class="row align-items-center">
-            <img src="../../assets/img/PRR_home.jpg" class="img-fluid w-100" alt="Logistics Banner">
-        </div>
-    </div>
-</div>
-<!-- Mobile Banner -->
-<div class="container-fluid bg-secondary my-5 d-md-none">
-    <div class="container">
-        <div class="row align-items-center">
-            <img src="../../assets/img/PRR_home.jpg" class="img-fluid w-100" alt="Logistics Banner">
-        </div>
-    </div>
-</div>
+<!-- Tracking Section -->
 
-<!-- Track Your Orders Section -->
-<div class="container-fluid my-5">
+<div class="tracking-section">
+  <!-- Desktop View: Image with overlay and text on left, form on right -->
+  <div class="d-none d-xl-block">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7 py-5 py-lg-0">
-                <h3 class="text-primary text-uppercase font-weight-bold">Track Your Orders</h3>
-                <h6 class="mb-4"></h6>
-                <p class="mb-4">
-                    For shipment tracking, please submit your shipment details and tracking requirements using the form below or email us at rajesh@prrtransglobal.com. Our customer support team will provide you with an update within one business hour during working hours.
-                </p>
-            </div>
-            <div class="col-lg-5">
-                <div class="bg-primary py-5 px-4 px-sm-5">
-                    <form (ngSubmit)="onSubmit()" [formGroup]="checkoutForm">
-
-                        <input type="text" formControlName="trackingid"  class="form-control border-light" style="padding: 30px;" name="trackingid" placeholder="BL NUMBER / CONTAINER NUMBER" required="">
-                        <br>
-                        <input type="email" formControlName="email"  class="form-control border-light" style="padding: 30px;" name="email" placeholder="Email" required="">
-                        <br>
-                        <div class="input-group-append">
-                            <button class="btn btn-dark btn-block border-0 py-3">Track & Trace</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+      <div class="row align-items-stretch g-0">
+        <!-- Image Side -->
+        <div class="col-lg-7 position-relative overflow-hidden">
+          <img src="../../assets/img/PRR_home.jpg" class="img-fluid w-100 h-100" alt="Logistics Banner" object-fit="cover">
+          <div class="banner-content">
+            <h3 class="text-white mb-3">Track Your Orders</h3>
+            <p class="text-white opacity-85 mb-4">
+              For shipment tracking, please submit your shipment details and tracking requirements using the form below or email us at rajesh@prrtransglobal.com. Our customer support team will provide you with an update within one business hour during working hours.
+            </p>
+            <a href="#track-form" class="btn btn-primary btn-lg px-4 py-2">Track Your Shipment</a>
+          </div>
         </div>
+        <!-- Form Side -->
+        <div class="col-lg-5 d-flex align-items-center">
+          <div class="bg-primary p-5 p-sm-6 w-100">
+            <form (ngSubmit)="onSubmit()" [formGroup]="checkoutForm" class="w-100">
+              <div class="mb-4">
+                <input type="text" formControlName="trackingid" class="form-control form-control-lg bg-transparent border-light text-white px-4 py-3" placeholder="BL NUMBER / CONTAINER NUMBER" required>
+              </div>
+              <div class="mb-4">
+                <input type="email" formControlName="email" class="form-control form-control-lg bg-transparent border-light text-white px-4 py-3" placeholder="Email" required>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-light btn-lg px-4 py-3">Track & Trace</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Mobile and Tablet View: Image full width with overlay and text, then form below -->
+  <div class="d-xl-none">
+    <div class="container">
+      <!-- Image with Overlay and Text -->
+      <div class="position-relative mb-5">
+        <img src="../../assets/img/PRR_home.jpg" class="img-fluid w-100" alt="Logistics Banner" object-fit="cover">
+        <div class="banner-content">
+          <h3 class="text-white mb-3">Track Your Orders</h3>
+          <p class="text-white opacity-85 mb-4">
+            For shipment tracking, please submit your shipment details and tracking requirements using the form below or email us at rajesh@prrtransglobal.com. Our customer support team will provide you with an update within one business hour during working hours.
+          </p>
+          <a href="#track-form" class="btn btn-primary btn-lg px-4 py-2">Track Your Shipment</a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="bg-primary p-5">
+        <form (ngSubmit)="onSubmit()" [formGroup]="checkoutForm" class="w-100">
+          <div class="mb-4">
+            <input type="text" formControlName="trackingid" class="form-control form-control-lg bg-transparent border-light text-white px-4 py-3" placeholder="BL NUMBER / CONTAINER NUMBER" required>
+          </div>
+          <div class="mb-4">
+            <input type="email" formControlName="email" class="form-control form-control-lg bg-transparent border-light text-white px-4 py-3" placeholder="Email" required>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-light btn-lg px-4 py-3">Track & Trace</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
