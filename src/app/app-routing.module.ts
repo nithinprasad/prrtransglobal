@@ -6,13 +6,15 @@ import { HomeComponent } from './component/home/home.component';
 import { ServicesComponent } from './component/services/services.component';
 import { StrengthComponent } from './component/strength/strength.component';
 import { ContactsComponent } from './component/contacts/contacts.component';
+import { AcademicsComponent } from './pages/academics/academics.component';
+import { NotFoundComponent } from './shared/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: 'service', 
-    component: ServicesComponent 
+  { path: 'service',
+    component: ServicesComponent
   },
-  { path: 'strength', 
-    component: StrengthComponent 
+  { path: 'strength',
+    component: StrengthComponent
   },
   {
     path: 'about',
@@ -21,16 +23,18 @@ const routes: Routes = [
   { path: 'contact',
     component: ContactsComponent
   },
+  { path: 'academics',
+    component: AcademicsComponent
+  },
   {
     path: '',
     component: HomeComponent
-   
-},
-{
-    path: '**',
-    redirectTo: '/home',
-    pathMatch: 'full'
-}
+
+  },
+  {
+      path: '**',
+      component: NotFoundComponent
+  }
 ];
 
 @NgModule({

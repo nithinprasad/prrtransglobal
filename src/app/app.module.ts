@@ -26,9 +26,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StrengthComponent } from './component/strength/strength.component';
 import { TrackingComponent } from './component/tracking/tracking.component';
 import { MapsComponent } from './component/contacts/maps/maps.component';
+import { AcademicsComponent } from './pages/academics/academics.component';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+import { NotFoundModule } from './shared/not-found/not-found.module';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -65,14 +67,16 @@ const analytics = getAnalytics(app);
     ContactsComponent,
     StrengthComponent,
     TrackingComponent,
-    MapsComponent
+    MapsComponent,
+    AcademicsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NotFoundModule
   ],
   providers: [],
   bootstrap: [AppComponent]

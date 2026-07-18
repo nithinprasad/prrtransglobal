@@ -35,7 +35,7 @@ export class TeamComponent implements OnInit {
     },
     {
       
-      "name":"Harish Santhanam ",
+      "name":"T Anitha ",
       "designation": "Manager Customer support ",
       "image": "../assets/img/prr/team/harish.jpeg",
       "email": "admin@prrtransglobal.com",
@@ -48,6 +48,14 @@ export class TeamComponent implements OnInit {
       "image": "../assets/img/prr/team/n.png",
       "email": "accounts@prrtransglobal.com",
       "phone": "+91 7904058994"
+    },
+    {
+      
+      "name":"Divya Lakshmi M",
+      "designation": "Overseas Pricing & Logistics Coordinator",
+      "image": "../assets/img/prr/team/n.png",
+      "email": "sales@prrtransglobal.com",
+      "phone": "+91  7305953391"
     }
     
   ]
