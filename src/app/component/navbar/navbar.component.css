@@ -69,3 +69,8 @@
         height: 40px;
     }
 }
+
+/* Make the brand text block shrink-wrap to its content */
+.navbar-brand-text {
+    display: inline-block;
+}
