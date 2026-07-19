@@ -40,6 +40,11 @@
     margin-bottom: 1.5rem; /* space-6 */
 }
 
+/* Wrapper to shrink-wrap content */
+.content-wrapper {
+    display: inline-block;
+}
+
 /* Form styling */
 .bg-primary {
     background-color: #0066CC; /* Primary */
@@ -106,5 +111,11 @@
     .btn-primary {
         width: 100%;
         margin-top: 1rem;
+    }
+    
+    /* Optional: make content-wrapper full width on small screens */
+    .content-wrapper {
+        display: block;
+        width: 100%;
     }
 }
