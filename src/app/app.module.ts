@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import { TopbarComponent } from './component/topbar/topbar.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
-import { HeaderComponent } from './component/header/header.component';
 import { AboutComponent } from './component/about/about.component';
 import { QuoteComponent } from './component/quote/quote.component';
 import { ServicesComponent } from './component/services/services.component';
@@ -52,7 +51,6 @@ const analytics = getAnalytics(app);
     HomeComponent,
     TopbarComponent,
     NavbarComponent,
-    HeaderComponent,
     AboutComponent,
     QuoteComponent,
     ServicesComponent,

@@ -41,7 +41,7 @@
 .testimonial-box {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-center: center;
   background-color: #f8f9fa;
   border-radius: 12px;
   padding: 2rem;
@@ -157,6 +157,10 @@
 
   .feature-title {
     font-size: 1rem;
+  }
+
+  .feature-box p {
+    font-size: 0.875rem;
   }
 }
 

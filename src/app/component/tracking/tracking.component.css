@@ -1,4 +1,131 @@
-.d-block{
-    height: 500px;;
+/* Tracking Component Styles */
+
+/* Banner image sections */
+.banner-image-wrapper {
+    background-color: #f8f9fa; /* light gray, same as bg-secondary */
 }
 
+/* Ensure image is responsive */
+.banner-image-wrapper img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Content area */
+.tracking-content {
+    /* No specific styling needed; use utility classes */
+}
+
+/* Typography overrides for heading */
+.tracking-content h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem; /* Heading 2: 2rem (32px) */
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0;
+    color: #1F2937; /* Secondary */
+    text-transform: uppercase;
+    margin-bottom: 1.5rem; /* space-6 */
+}
+
+.tracking-content h6 {
+    margin-bottom: 1rem; /* space-4 */
+}
+
+.tracking-content p {
+    font-size: 1rem; /* Body: 1rem (16px) */
+    line-height: 1.8;
+    color: #4B5563; /* body text */
+    margin-bottom: 1.5rem; /* space-6 */
+}
+
+/* Wrapper to shrink-wrap content */
+.content-wrapper {
+    display: inline-block;
+}
+
+/* Ensure inner elements shrink-wrap as well */
+.content-wrapper > * {
+    width: fit-content;
+}
+
+/* Form styling */
+.bg-primary {
+    background-color: #0066CC; /* Primary */
+    color: #ffffff;
+}
+
+/* Form inputs */
+.bg-primary .form-control {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 0.25rem; /* radius-sm */
+    color: #fff;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+}
+
+.bg-primary .form-control::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.bg-primary .form-control:focus {
+    background-color: rgba(255,255,255,0.15);
+    border-color: #fff;
+    box-shadow: none;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #0066CC; /* Primary */
+    border-color: #0066CC;
+    color: #fff;
+    border-radius: 0.5rem; /* radius-md */
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0052a3; /* slightly darker */
+    border-color: #0052a3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* shadow-sm */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .tracking-content {
+        text-align: center;
+    }
+    
+    .tracking-content h3 {
+        font-size: 1.75rem; /* slightly smaller on mobile */
+    }
+    
+    .tracking-content p {
+        font-size: 0.95rem;
+    }
+    
+    .bg-primary {
+        padding: 2rem;
+    }
+    
+    .btn-primary {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    /* Optional: make content-wrapper full width on small screens */
+    .content-wrapper {
+        display: block;
+        width: 100%;
+    }
+    
+    /* Inner elements full width on small screens */
+    .content-wrapper > * {
+        width: 100%;
+    }
+}
